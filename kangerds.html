@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cebu: The Queen City of the South</title>
+    <style>
+        /* UI and Aesthetics: Times New Roman, Violet Theme, and Glassmorphism */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-image: url('stnino.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background: #8A2BE2;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #f9d71c;
+        }
+
+            header h1 {
+                margin: 0;
+                line-height: 1.2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .header-flag {
+            height: 50px;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .translation-sub {
+            display: block;
+            font-size: 0.6em;
+            font-weight: normal;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #ce1126;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            color: white;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #8A2BE2;
+            float: right;
+            margin: 0 0 20px 20px;
+        }
+
+        .zh-text {
+            display: block;
+            font-size: 0.9em;
+            color: #4B0082;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #8A2BE2;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .sun-animation {
+            width: 50px;
+            height: 50px;
+            background: #f9d71c;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #f9d71c;
+            position: relative;
+            animation: shine 2s infinite alternate;
+            margin: 10px auto;
+        }
+
+        @keyframes shine {
+            from {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            to {
+                transform: scale(1.3);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <div class="title-row">
+                <img src="FLAG.webp" alt="Philippine Flag" class="header-flag">
+                <div>
+                    WELCOME TO MY HOME COUNTRY
+                    <small class="translation-sub">歡迎來到我的祖國</small>
+                </div>
+                <img src="FLAG.webp" alt="Philippine Flag" class="header-flag">
+            </div>
+            <span>
+                "THE CEBU, PHILIPPINES"
+                <small class="translation-sub">「菲律賓宿霧」</small>
+            </span>
+        </h1>
+    </header>
+
+    <nav>
+        <strong>Plan Your Trip 計劃您的行程: </strong>
+        <select name="destinations" id="destinations">
+            <option value="heritage">Heritage Sites 文化遺產</option>
+            <option value="beaches">Pristine Beaches 純淨海灘</option>
+            <option value="food">Local Delicacies 當地美食</option>
+        </select>
+    </nav>
+
+    <div class="container">
+        <img src="gladysphoto.jpg" alt="孝佳麗" class="profile-img">
+
+        <h2 style="color: #4B0082;">Mabuhay! I am 孝佳麗.</h2>
+
+        <p>
+            Welcome to my lovely country! Today, I am highlighting <strong>Cebu</strong>, a province that perfectly balances urban development with natural paradise.
+            <span class="zh-text">歡迎來到我可愛的國家！今天，我要重點介紹宿霧，這是一個在城市發展與自然天堂之間取得完美平衡的省份。</span>
+        </p>
+
+        <div class="sun-animation"></div>
+        <p style="text-align:center; font-style:italic;">Tropical Cebu Vibes <br> 宿霧熱帶風情</p>
+
+        <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.1);">
+
+        <h3>Must-Visit Locations in Cebu <br> <small>宿霧必遊景點</small></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Destination 目的地</th>
+                    <th>Activity 活動</th>
+                    <th>Famous For 以此聞名</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basilica del Sto. Niño</td>
+                    <td>Sightseeing 觀光</td>
+                    <td>Oldest Catholic Church 最古老的天主教堂</td>
+                </tr>
+                <tr>
+                    <td>Kawasan Falls</td>
+                    <td>Canyoneering 溪降</td>
+                    <td>Turquoise Water 藍寶石色瀑布</td>
+                </tr>
+                <tr>
+                    <td>Lechon Stalls</td>
+                    <td>Dining 用餐</td>
+                    <td>World's Best Roasted Pig 世界上最好的烤乳豬</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 30px;">
+            <h3>Sights and Sounds 視聽體驗</h3>
+            <p>Listen to the Sinulog Festival Beat: <br> 聆聽聖嬰節慶典節奏：</p>
+            <audio controls style="width: 100%; opacity: 0.8;">
+                <source src="sinulog.mp3" type="audio/mpeg">
+            </audio>
+
+            <p>Watch a glimpse of Cebu: <br> 觀看宿霧一瞥：</p>
+            <video width="100%" controls poster="cebu-thumbnail.jpg" style="border-radius: 8px;">
+                <source src="cebu.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+        &copy; 2026 Web Creation Final Exam - 孝佳麗
+    </footer>
+
+</body>
+</html>
